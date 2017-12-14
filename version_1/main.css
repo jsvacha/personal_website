@@ -1,0 +1,103 @@
+body {
+  font-family: "Trebuchet MS", Helvetica, sans-serif; 
+  color: #A4A5A9;
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  font-size: 16px;
+}
+
+#top-box {
+  width: 100%;
+  height: 180px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+#name-box {
+  font-size: 60px;
+  font-weight: bold;
+  width: 28%; 
+  margin: 0 auto;
+  padding: 8px 0px;
+  border: solid #A4A5A9 10px;
+}
+
+#description-box {
+  margin-top: 15px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#main-box {
+  margin: 0 auto;
+  height: 300px;
+  width: 70%;
+}
+
+#menu-bar {
+  margin: 0 auto;
+  height: 45px;
+  border-bottom: solid #A4A6A9 2px;
+}
+
+.nav-button {
+  position: relative;
+  font-size: 18px;
+  float: left;
+  width: 20%;
+  padding-top: 16px;
+  text-align: center;
+  
+}
+
+#content-box {
+  padding-top: 20px;
+}
+
+#profile {
+  position: relative;
+  float: left;
+  width: 20%;
+}
+
+#my-profile {
+  width: 100%;
+  float: left;
+}
+
+#text-box {
+  float: left;
+  position: relative;
+  width: 80%;
+}
+
+#about-me {
+  padding: 15px 30px;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#nav-link:hover {
+  text-decoration: none;
+}
+
+#nav-link:visited {
+  text-decoration: none;
+  color: #A4A5A9;
+}
+
+.selected {
+  background-color: 
+}

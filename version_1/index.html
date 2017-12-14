@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Jaymes Plays Gaymes</title>
+		<style>
+			@font-face {
+				font-family: ModerneSans;
+				src: url(moderne-sans.ttf);
+			}
+			body {
+				background: #fcfcfc;
+				color: #a4a5a9;
+				font-family: ModerneSans;
+				font-size: 16px;
+				padding: 0;
+				margin: 0 auto;
+				max-width: 960px;
+				width: 100%;
+			}
+			body > header {
+				border-bottom: 2px solid #ccc;
+				margin-bottom: 3em;
+				padding-bottom: 1em;
+				text-align: center;
+				text-transform: uppercase;
+			}
+			body > header > .title {
+				background: #fcfcfc;
+				border: 8px solid;
+				display: inline-block;
+				font-size: 4em;
+				margin: 1em auto 0em auto;
+				padding: 14px 16px 0 16px;
+				position: relative;
+				text-align: center;
+			}
+			body > header > .title:before {
+				background-image: url('quad.svg');
+				background-size: 100%;
+				content: "";
+				height: 200px;
+				left: 50%;
+				margin-left: -133px;
+				position: absolute;
+				top: -102px;
+				width: 200px;
+			}
+			body > header > .subtitle {
+				display: inline-block;
+				font-size: 1.5em;
+				margin: .5em auto 3.5em auto;
+				padding: 14px 16px 0 16px;
+				text-align: center;
+			}
+			body > header > nav {
+				display: flex;
+				flex-direction: row;
+			}
+			body > header > nav a {
+				color: #a4a5a9;
+				display: block;
+				flex-grow: 1;
+				flex-shrink: 0;
+				padding: 0.5em 0 0 0;
+				text-align: center;
+				text-decoration: none;
+			}
+			body > header > nav a.active,
+			body > header > nav a:hover {
+				color: black;
+			}
+			
+			main {
+				color: #555;
+				font-family: Arial;
+				line-height: 1.6;
+			}
+			
+			h1, h2, h3, h4, h5, h6 {
+				font-family: ModerneSans;
+			}
+			
+			article.content-block {
+				background: white;
+				box-shadow: 0 0 15px #eee;
+				display: flex;
+				flex-direction: row;
+				margin: 2em 0;
+				position: relative;
+			}
+			article.content-block:first-child {
+				margin-top: 0;
+			}
+			article.content-block:last-child {
+				margin-bottom: 0;
+			}
+			article.content-block > .content {
+				flex-shrink: 1;
+				flex-grow: 1;
+				padding: 30px;
+			}
+			article.content-block > .content h1:first-child,
+			article.content-block > .content h2:first-child,
+			article.content-block > .content h3:first-child,
+			article.content-block > .content h4:first-child,
+			article.content-block > .content h5:first-child,
+			article.content-block > .content h6:first-child {
+				margin-top: 0;
+			}
+			article.content-block > img {
+				box-sizing: border-box;
+				flex-grow: 0;
+				flex-shrink: 0;
+				width: auto;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div class="title">James Svacha</div>
+			<div class="subtitle">Electrical Engineer | Aerial Robotics</div>
+			<nav>
+				<a href="#" class="active">About</a>
+				<a href="#">Publications</a>
+				<a href="#">CV</a>
+				<a href="#">Contact</a>
+				<a href="#">Cool Stuff</a>
+			</nav>
+		</header>
+		<main>
+			<article class="content-block">
+				<img src="profile.png" alt="A photo of my faaaace.">
+				<div class="content">
+					<h1>Welcome!</h1>
+					<p>My name is James Svacha. I'm currently a Ph.D. student in Electrical and Systems Engineering at the University of Pennsylvania. My research advisor is Dr. Vijay Kumar, and my focus is on state estimation and control of aerial robots, specifically quadrotors.</p>
+					<p>When I am not working in the lab, you can find me pursuing one of many hobbies, including but not limited to photography, playing guitar, building circuits, and hacking.</p>
+				</div>
+			</article>
+		</main>
+	</body>
+</html>
