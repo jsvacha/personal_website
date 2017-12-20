@@ -14,13 +14,14 @@ p {
 
 #top-box {
   width: 100%;
-  height: 180px;
+  height: 20vh;
+  min-height: 120px;
   text-align: center;
   padding-top: 50px;
 }
 
 #name-box {
-  font-size: 60px;
+  font-size: 3vw;
   font-weight: bold;
   width: 28%; 
   margin: 0 auto;
@@ -30,7 +31,7 @@ p {
 
 #description-box {
   margin-top: 15px;
-  font-size: 30px;
+  font-size: 1.5vw;
   font-weight: bold;
 }
 
@@ -71,6 +72,11 @@ p {
   float: left;
 }
 
+#coming-soon {
+  width: 100%;
+  float: left;
+}
+
 #text-box {
   float: left;
   position: relative;
@@ -89,11 +95,11 @@ a:hover {
   text-decoration: underline;
 }
 
-#nav-link:hover {
+.nav-link:hover {
   text-decoration: none;
 }
 
-#nav-link:visited {
+.nav-link:visited {
   text-decoration: none;
   color: #A4A5A9;
 }
