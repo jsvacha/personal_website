@@ -95,6 +95,11 @@ a:hover {
   text-decoration: underline;
 }
 
+.nav-link:link {
+  text-decoration: none;
+  color: #A4A5A9;
+}
+
 .nav-link:hover {
   text-decoration: none;
 }
