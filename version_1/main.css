@@ -1,3 +1,8 @@
+@font-face {
+  font-family: ModerneSans;
+  src: url(moderne-sans.ttf);
+}
+
 body {
   font-family: "Trebuchet MS", Helvetica, sans-serif; 
   color: #A4A5A9;
@@ -21,17 +26,19 @@ p {
 }
 
 #name-box {
+  font-family: ModerneSans;
   font-size: 3vw;
   font-weight: bold;
   width: 28%; 
   margin: 0 auto;
-  padding: 8px 0px;
+  padding: 18px 0 5px 0;
   border: solid #A4A5A9 10px;
 }
 
 #description-box {
-  margin-top: 15px;
+  font-family: ModerneSans;
   font-size: 1.5vw;
+  padding-top: 25px;
   font-weight: bold;
 }
 
@@ -77,14 +84,14 @@ p {
   float: left;
 }
 
-#text-box {
+#about-me-box {
   float: left;
   position: relative;
   width: 80%;
 }
 
 #about-me {
-  padding: 15px 30px;
+  padding: 5px 0 0 30px;
 }
 
 a:link {
@@ -108,6 +115,9 @@ a:hover {
   text-decoration: none;
   color: #A4A5A9;
 }
+
+.text-box {
+
 
 .selected {
   background-color: 
