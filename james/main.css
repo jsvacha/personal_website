@@ -57,14 +57,16 @@ p {
 .nav-button {
   position: relative;
   font-size: 18px;
+  white-space: nowrap;
+  overflow: hidden;
   float: left;
   width: 20%;
   padding-top: 16px;
   text-align: center;
-  
 }
 
 #content-box {
+  width: 100%;
   padding-top: 20px;
 }
 
@@ -116,9 +118,34 @@ a:hover {
   color: #A4A5A9;
 }
 
-.text-box {
-
-
 .selected {
   background-color: 
+}
+
+@media (max-width : 750px) {
+  #menu-bar {
+    border-bottom: none;
+  }
+
+  .nav-button {
+    float: left;
+    width: 100%;
+    border-bottom: solid #A4A6A9 2px;
+  }
+
+  .last-button {
+    margin-bottom: 10px;
+  }
+
+  #profile {
+    width: 100%;
+  }
+
+  #about-me-box {
+    width: 100%;
+  }
+
+  #about-me {
+    padding: 10px 0 0 0;
+  }
 }
