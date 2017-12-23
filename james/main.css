@@ -71,6 +71,7 @@ p {
 }
 
 .nav-button {
+  height: 25px;
   position: relative;
   float: left;
   font-size: 18px;
@@ -86,7 +87,7 @@ p {
 }
 
 #content-box {
-  margin-top: 20px;
+  margin-top: 40px;
   float: left;
   width: 100%;
 }
@@ -166,13 +167,15 @@ textarea, #email, #subject, input[type=submit] {
 @media (max-width : 750px) {
   #menu-bar {
     border-bottom: none;
-    height: 200px;
+    height: 250px;
   }
 
   .nav-button {
     float: left;
     width: 100%;
     border-bottom: solid #A4A6A9 2px;
+    padding-bottom: 10px;
+    margin-top: 0;
   }
 
   .last-button {
