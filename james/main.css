@@ -84,6 +84,7 @@ p {
 }
 
 #content-box {
+  margin-top: 20px;
   float: left;
   width: 100%;
 }
@@ -185,6 +186,18 @@ a:hover {
     font-size: 30px;
     width: 300px;
     padding-top: 15px; 
+  }
+
+  #name-box:before {
+    background-image: url('images/quad.svg');
+    background-size: 100%;
+    content: "";
+    height: 90px;
+    left: 50%;
+    margin-left: -45px;
+    position: absolute;
+    top: 10px;
+    width: 90px;
   }
 
   #description-box {
