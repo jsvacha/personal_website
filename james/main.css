@@ -36,6 +36,18 @@ p {
   border: solid #A4A5A9 10px;
 }
 
+#name-box:before {
+  background-image: url('images/quad.svg');
+  background-size: 100%;
+  content: "";
+  height: 150px;
+  left: 50%;
+  margin-left: -80px;
+  position: absolute;
+  top: -20px;
+  width: 150px;
+}
+
 #description-box {
   float: left;
   width: 100%;
@@ -74,7 +86,6 @@ p {
 #content-box {
   float: left;
   width: 100%;
-  padding-top: 20px;
 }
 
 #profile {
