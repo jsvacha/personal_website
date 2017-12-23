@@ -90,7 +90,6 @@ p {
 }
 
 #profile {
-  position: relative;
   float: left;
   width: 20%;
 }
@@ -137,12 +136,8 @@ a:hover {
   color: #A4A5A9;
 }
 
-.selected {
-  background-color: 
-}
-
 #bottom-box {
-  position: abxolute;
+  position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -152,6 +147,19 @@ a:hover {
   text-align: center;
   width: 30%;
   margin: 0 auto;
+}
+
+input[type=text], textarea {
+  box-sizing: border-box;
+  padding: 10px;
+  border: 1px solid #A4A5A9;
+  width: 100%;
+  resize: none;
+  border-radius: 4px;
+}
+
+textarea, #email, #subject, input[type=submit] {
+  margin-top: 20px;
 }
 
 @media (max-width : 750px) {
