@@ -41,7 +41,7 @@
       <div id="content-box">
         <p>Please fill out the information and submit to contact me via email.<br></p>
         <div class="container">
-          <form method="post" action="action.php">
+          <form name="emailform" method="post" action="action.php" onsubmit="return validateForm()">
             <input type="text" id="name" name="name" placeholder="Name">
             <input type="text" id="email" name="email" placeholder="Email address (we won't share this)">
             <input type="text" id="subject" name="subject" placeholder="Subject">
@@ -54,6 +54,21 @@
       <div id="copyright">
         <p> &copy;2017 James Svacha</p>
       </div>
+
+    <script>
+      function validateForm() {
+        var x = document.forms["emailform"]["email"].value;
+        if (x == "") {
+          alert("Email address must be filled out!");
+          return false;
+        }
+        x = document.forms["emailform"]["message"].value;
+        if (x == "") {
+          alert("Message is empty!");
+          return false;
+        }
+      }
+    </script>
   </body>
 
 </html>
