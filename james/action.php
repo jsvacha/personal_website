@@ -5,7 +5,8 @@
   $subject = $_POST['subject'];
   $message = $_POST['message'];
   $emailTo = "jsvacha@seas.upenn.edu";
-  $body = "From: $name\n Email: $email\n Message:\n $message";
+  $body = "From: $name\n Message:\n $message";
+  $headers = "From: $email"
 
   if ($_POST['submit']) {
     if (mail($emailTo, $subject, $body, $headers)) {
