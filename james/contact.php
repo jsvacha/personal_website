@@ -1,3 +1,27 @@
+<?php
+
+  ini_set("log_errors", 1);
+  ini_set("error_log", "/tmp/php-error.log");
+  error_log( "Hello, errors!" );
+
+  $name = $_POST['name'];
+  $email = $_POST['email'];
+  $subject = $_POST['subject'];
+  $message = $_POST['message'];
+  $emailTo = "jsvacha@seas.upenn.edu";
+  $body = "From: $name\n Message:\n $message";
+  $headers = "From: $email";
+
+  if ($_POST['submit']) {
+    if (mail($emailTo, $subject, $body, $headers)) {
+      echo "The email was sent successfully";
+    } else {
+      echo "The email could not be sent.";
+    }
+  }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -32,16 +56,16 @@
           <a class="nav-link" href="cv.html">CV</a>
         </div>
         <div class="nav-button">
-          <a class="nav-link" href="contact.html">CONTACT</a>
+          <a class="nav-link" href="contact.php">CONTACT</a>
         </div>
-        <div class="nav-button">
+        <div class="nav-button last-button">
           <a class="nav-link" href="cool-stuff.html">COOL STUFF</a>
         </div>
       </div>
       <div id="content-box">
         <p>Please fill out the information and submit to contact me via email.<br></p>
         <div class="container">
-          <form name="emailform" method="post" action="action.php" onsubmit="return validateForm()">
+          <form name="emailform" method="post" action="contact.php" onsubmit="return validateForm()">
             <input type="text" id="name" name="name" placeholder="Name">
             <input type="text" id="email" name="email" placeholder="Email address (we won't share this)">
             <input type="text" id="subject" name="subject" placeholder="Subject">
