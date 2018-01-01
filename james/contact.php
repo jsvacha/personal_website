@@ -14,9 +14,11 @@
 
   if ($_POST['submit']) {
     if (mail($emailTo, $subject, $body, $headers)) {
-      echo "The email was sent successfully";
+      $message = "The email was sent successfully";
+      echo "<script type='text/javascript'>alert('$message');</script>";
     } else {
-      echo "The email could not be sent.";
+      $message = "The email could not be sent.";
+      echo "<script type='text/javascript'>alert('$message');</script>";
     }
   }
 
