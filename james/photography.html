@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>James Svacha - CV</title>
+    <meta name="author" content="James Svacha"/>
+    <meta name="description" content="Displays my CV"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device_width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+  </head>
+
+  <body>
+    <div id="top-box">
+      <div id="name-box">
+        JAMES SVACHA
+      </div>
+      <div id="description-box">
+        AERIAL ROBOTICS 
+      </div>
+    </div>
+
+    <div id="main-box">
+      <div id="menu-bar">
+        <div class="nav-button selected">
+          <a class="nav-link" href="index.html">ABOUT</a>
+        </div>
+        <div class="nav-button">
+          <a class="nav-link" href="comingsoon.html">PROJECTS</a>
+        </div>
+        <div class="nav-button">
+          <a class="nav-link" href="cv.html">CV</a>
+        </div>
+        <div class="nav-button">
+          <a class="nav-link" href="contact.php">CONTACT</a>
+        </div>
+        <div class="nav-button last-button">
+          <a class="nav-link" href="cool-stuff.html">COOL STUFF</a>
+        </div>
+      </div>
+      <div id="content-box">
+        <div class="slide">
+          <img class="slide-image" src="images/photography/baby_pineapple.jpg">
+        </div>
+        <div class="slide">
+          <img class="slide-image" src="images/photography/surfer.jpg">
+        </div>
+        <div class="slide">
+          <img class="slide-image" src="images/photography/luau_1_hdr.jpg">
+        </div>
+        <div class="slide">
+          <img class="slide-image" src="images/photography/sunrise_miami_hdr.jpg">
+        </div>
+        <div class="slide">
+          <img class="slide-image" src="images/photography/waterfall_hdr.jpg">
+        </div>
+        <div class="slide">
+          <img class="slide-image" src="images/photography/boat_5.jpg">
+        </div>
+        <div class="slide">
+          <img class="slide-image" src="images/photography/miami_boats.jpg">
+        </div>
+        <div class="slide">
+          <img class="slide-image" src="images/photography/luau_sunset_hdr.jpg">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094; PREV</a>
+        <a class="next" onclick="plusSlides(1)">NEXT &#10095;</a>
+      </div>
+    </div>
+    <div id="copyright">
+      <p> &copy;2017 James Svacha &amp; Matt Steven</p>
+    </div>
+
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("slide");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slides[slideIndex-1].style.display = "block";
+      }
+    </script>
+  </body>
+
+</html>
