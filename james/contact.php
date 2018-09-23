@@ -77,9 +77,6 @@
         </div>
       </div>
     </div>
-      <div id="copyright">
-        <p> &copy;2017 James Svacha &amp; Matt Steven</p>
-      </div>
 
     <script>
       function validateForm() {
