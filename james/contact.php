@@ -52,7 +52,7 @@
           <a class="nav-link" href="index.html">ABOUT</a>
         </div>
         <div class="nav-button">
-          <a class="nav-link" href="comingsoon.html">PROJECTS</a>
+          <a class="nav-link" href="projects.html">PROJECTS</a>
         </div>
         <div class="nav-button">
           <a class="nav-link" href="cv.html">CV</a>
@@ -95,6 +95,11 @@
         }
       }
     </script>
+    <div id="bottom-box">
+      <div id="copyright">
+        <p> &copy;<script type="text/javascript">document.write(new Date().getFullYear());</script> James Svacha &amp; Matt Steven</p>
+      </div>
+    </div>
   </body>
 
 </html>
