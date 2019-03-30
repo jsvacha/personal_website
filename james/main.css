@@ -1,0 +1,256 @@
+@font-face {
+  font-family: ModerneSans;
+  src: url(moderne-sans.ttf);
+}
+
+body {
+  font-family: "Trebuchet MS", Helvetica, sans-serif; 
+  color: #A4A5A9;
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  font-size: 16px;
+}
+
+.prev {
+  float: left;
+}
+
+.next {
+  float: right;
+}
+
+.slide {
+  width: 100%;
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: 0.4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: 0.4}
+  to {opacity: 1}
+}
+
+.slide-image {
+  width: 100%;
+}
+
+#top-box {
+  width: 100%;
+  height: 20vh;
+  min-height: 120px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+#name-box {
+  font-family: ModerneSans;
+  font-size: 60px;
+  font-weight: bold;
+  width: 550px; 
+  min-width: 200px;
+  margin: 0 auto;
+  padding: 18px 0 5px 0;
+  border: solid #A4A5A9 10px;
+}
+
+#name-box:before {
+  background-image: url('images/quad.svg');
+  background-size: 100%;
+  content: "";
+  height: 150px;
+  left: 50%;
+  margin-left: -80px;
+  position: absolute;
+  top: -20px;
+  width: 150px;
+}
+
+#description-box {
+  float: left;
+  width: 100%;
+  font-family: ModerneSans;
+  font-size: 30px;
+  padding-top: 25px;
+  font-weight: bold;
+}
+
+#main-box {
+  width: 70%;
+  margin: 0 auto;
+  height: 300px;
+}
+
+#menu-bar {
+  float: left;
+  margin: 0 auto;
+  width: 100%;
+  height: 45px;
+}
+
+.nav-button {
+  height: 25px;
+  position: relative;
+  float: left;
+  font-size: 18px;
+  white-space: nowrap;
+  overflow: hidden;
+  float: left;
+  width: 20%;
+  padding-top: 16px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  text-align: center;
+  border-bottom: solid #A4A6A9 2px;
+}
+
+#content-box {
+  margin-top: 40px;
+  float: left;
+  width: 100%;
+}
+
+#profile {
+  float: left;
+  width: 20%;
+}
+
+#my-profile {
+  width: 100%;
+  float: left;
+}
+
+#page-name {
+  width: 100%;
+  float: left;
+}
+
+#project {
+  padding: 5px 0 0 30px;
+}
+
+#about-me-box {
+  float: left;
+  position: relative;
+  width: 80%;
+}
+
+#about-me {
+  padding: 5px 0 0 30px;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.nav-link:link {
+  text-decoration: none;
+  color: #A4A5A9;
+}
+
+.nav-link:hover {
+  text-decoration: none;
+}
+
+.nav-link:visited {
+  text-decoration: none;
+  color: #A4A5A9;
+}
+
+#bottom-box {
+  float: left;
+  width: 100%;
+  height: 50px;
+}
+
+#copyright {
+  text-align: center;
+  width: 30%;
+  margin: 0 auto;
+}
+
+input[type=text], textarea {
+  box-sizing: border-box;
+  padding: 10px;
+  border: 1px solid #A4A5A9;
+  width: 100%;
+  resize: none;
+  border-radius: 4px;
+}
+
+textarea, #email, #subject, input[type=submit] {
+  margin-top: 20px;
+}
+
+@media (max-width : 750px) {
+  #menu-bar {
+    border-bottom: none;
+    height: 250px;
+  }
+
+  .nav-button {
+    float: left;
+    width: 100%;
+    border-bottom: solid #A4A6A9 2px;
+    padding-bottom: 10px;
+    margin-top: 0;
+  }
+
+  .last-button {
+    margin-bottom: 10px;
+  }
+
+  #profile {
+    width: 100%;
+  }
+
+  #about-me-box {
+    width: 100%;
+  }
+
+  #about-me {
+    padding: 10px 0 0 0;
+  }
+
+  #name-box {
+    font-size: 30px;
+    width: 300px;
+    padding-top: 15px; 
+  }
+
+  #name-box:before {
+    background-image: url('images/quad.svg');
+    background-size: 100%;
+    content: "";
+    height: 90px;
+    left: 50%;
+    margin-left: -45px;
+    position: absolute;
+    top: 10px;
+    width: 90px;
+  }
+
+  #description-box {
+    font-size: 20px;
+  }
+
+  #top-box {
+    height: 120px;
+  }
+}

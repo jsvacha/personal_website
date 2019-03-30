@@ -6,7 +6,7 @@
     <meta name="author" content="James Svacha"/>
     <meta name="description" content="James Svacha's Personal Home Page"/>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device_width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device_width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
   </head>
 
@@ -17,43 +17,46 @@
         JAMES SVACHA
       </div>
       <div id="description-box">
-        AERIAL ROBOTICIST 
+        AERIAL ROBOTICS 
       </div>
     </div>
 
     <div id="main-box">
       <div id="menu-bar">
         <div class="nav-button selected">
-          <a id="nav-link" href="main.html">ABOUT</a>
+          <a class="nav-link" href="index.html">ABOUT</a>
         </div>
         <div class="nav-button">
-          PUBLICATIONS
+          <a class="nav-link" href="projects.html">PROJECTS</a>
         </div>
         <div class="nav-button">
-          CV
+          <a class="nav-link" href="cv.html">CV</a>
         </div>
         <div class="nav-button">
-          CONTACT
+          <a class="nav-link" href="contact.php">CONTACT</a>
         </div>
-        <div class="nav-button">
-          COOL STUFF
+        <div class="nav-button last-button">
+          <a class="nav-link" href="cool-stuff.html">COOL STUFF</a>
         </div>
       </div>
       <div id="content-box">
         <div id="profile">
-          <img src="../images/me.jpg" id="my-profile"> 
+          <img src="images/me.jpg" id="my-profile">
         </div>
-        <div id="text-box">
+        <div id="about-me-box">
           <div id="about-me"/>
             <h1>Welcome!</h1>
             <p>My name is James Svacha, and I'm currently a Ph.D. student in <a href="http://www.ese.upenn.edu/" target="__blank">Electrical and Systems Engineering</a> at the Univeristy of Pennsylvania. My research advisor is <a href="https://www.kumarrobotics.org/" target="__blank">Dr. Vijay Kumar</a>, and my focus is on state estimation and control of aerial robots, specifically quadrotors.</p>
-            <p>I am currently working on novel ways of estimating quantities such as velocity and orientation by leveraging the information convayed through drag effects on quadrotors during flight. These drag effects make it possible to measure functions of the velocity and orientation using the onboard accelerometer. In addition to state estimation, I have worked on compensating for drag effects in the control loop during flight.  
-            <p> When I am not working in the lab, you can find me pursuing one of many hobbies, including but not limited to photography, playing guitar, building circuits, and hacking. 
+            <p>I am currently working on novel ways of estimating the velocity and orientation by leveraging the information conveyed through drag effects. These effects make it possible to measure functions of the velocity and orientation using the onboard accelerometer. In addition to state estimation, I have worked on modeling and compensating for drag effects in the control loop.  
           </div>
         </div>
       </div>
     </div>
-
+    <div id="bottom-box">
+      <div id="copyright">
+        <p> &copy;<script type="text/javascript">document.write(new Date().getFullYear());</script> James Svacha &amp; Matt Steven</p>
+      </div>
+    </div>
   </body>
 
 </html>

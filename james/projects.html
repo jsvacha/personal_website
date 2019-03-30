@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Projects</title>
+    <meta name="author" content="James Svacha"/>
+    <meta name="description" content="Explains the projects I have worked on"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device_width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+  </head>
+
+  <body>
+    <div id="top-box">
+      <div id="name-box">
+        JAMES SVACHA
+      </div>
+      <div id="description-box">
+        AERIAL ROBOTICS 
+      </div>
+    </div>
+
+    <div id="main-box">
+      <div id="menu-bar">
+        <div class="nav-button selected">
+          <a class="nav-link" href="index.html">ABOUT</a>
+        </div>
+        <div class="nav-button">
+          <a class="nav-link" href="projects.html">PROJECTS</a>
+        </div>
+        <div class="nav-button">
+          <a class="nav-link" href="cv.html">CV</a>
+        </div>
+        <div class="nav-button">
+          <a class="nav-link" href="contact.php">CONTACT</a>
+        </div>
+        <div class="nav-button last-button">
+          <a class="nav-link" href="cool-stuff.html">COOL STUFF</a>
+        </div>
+      </div>
+      <div id="content-box">
+        <div id="page-name">
+          <h1>Projects</h1>
+          <p>The following is a list of projects I have worked on over the course of my graduate studies at Penn.</p>
+        </div>
+        <div id="project-name">
+          <h2>Modeling and Compensation for First-Order Drag Effects on Quadrotors</h2>
+          <p>
+            This project was an attempt to 1) develop a simple lumped-parameter dynamic model for drag effects in the horizontal and vertical directions and 
+            2) develop a controller to compensate for these effects. This resulted in a paper that was accepted to IEEE International Conference on 
+            Unmanned Aircraft Systems (ICUAS) in 2017. 
+          </p>
+          <h2>Inertial State Estimation for Quadrotors</h2>
+          <p>
+            This project was an extension of the previous one. Now that such a model has been developed, we wished to use this model to estimate the 
+            orientation and velocity of a quadrotor UAV using only the IMU. It turns out that the tilt component of attitude can be estimated, as well
+            as the body-frame linear velocity and the yaw can be dead-reckoned, although it will drift. The tilt and the velocity are all that is needed
+            to stabilize the quadrotor, and may be estimated if the yaw is unknown. In addition, our method makes it possible to estimate the thrust coefficient
+            and first-order drag coefficients of the quadrotor's dynamic model. 
+          </p>
+          <h2>Vision-Aided Inertial State Estimation For Quadrotors</h2>
+          <p>
+            We can add a camera to the robot and use feature-based methods to improve the yaw estimates. The tilt and velocity estimates from the filter can be 
+            used to reject outlying feature correspondences in a computationally efficient way. 
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="bottom-box">
+      <div id="copyright">
+        <p> &copy;<script type="text/javascript">document.write(new Date().getFullYear());</script> James Svacha &amp; Matt Steven</p>
+      </div>
+    </div>
+  </body>
+
+</html>
