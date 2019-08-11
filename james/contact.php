@@ -25,9 +25,7 @@ if($_POST) {
 
   $recipient = "jsvacha@seas.upenn.edu";
 
-  $headers = 'MIME-Version: 1.0' . "\r\n"
-    .'Content-type: text/html; charset=utf-8' . "\r\n"
-    .'From: ' . $email . "\r\n";
+  $headers = 'From: ' . $email;
 
   if(mail($recipient, $subject, $message, $headers)) {
     echo '<p>Thank you. Your email has been submitted.</p>';
@@ -36,7 +34,7 @@ if($_POST) {
   }
 
 } else {
-    echo '<p>Sorry, but there was an error. Please send an email to jsvacha@seas.upenn.edu to contact me. </p>';
+  echo '<p>Sorry, but there was an error. Please send an email to jsvacha@seas.upenn.edu to contact me. </p>';
 }
 
 ?>
