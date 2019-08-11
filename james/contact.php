@@ -23,7 +23,7 @@ if($_POST) {
     $name = filter_var($_POST['message'], FILTER_SANITIZE_STRING);
   }
 
-  $recipient = "jsvacha@seas.upenn.edu";
+  $recipient = "jbsvacha@gmail.com";
 
   $headers = 'From: ' . $email;
 
