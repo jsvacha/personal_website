@@ -44,9 +44,9 @@
           </div>
           <h2>Vision-Aided Inertial State Estimation For Quadrotors <a href="RAL19.pdf" style="color:grey">[Download PDF]</a></h2>
           <p>
-            We can add a camera to the robot and use feature-based methods to improve the yaw estimates. The tilt and velocity estimates from the filter can be 
-            used to reject outlying feature correspondences in a computationally efficient way. In addition, this work reparameterizes the orientation of the vehicle
-            so that the yaw estimate is not needed for estimating the velocity and tilt of the vehicle. The video below shows our system in action.
+            The purpose of this project was to develop an estimator that only needs an IMU to estimate the tilt and velocity of the quadrotor when yaw is unknown. 
+            Optionally, we can add a camera to the robot and use feature-based methods to improve the yaw estimates. The tilt and velocity estimates from the filter can be 
+            used to reject outlying feature correspondences in a computationally efficient way. The video below shows our system in action.
           </p>
           <div class="vid">
             <video controls="controls" src="RAL19.mp4">
@@ -55,10 +55,10 @@
           </div>
           <h2>Inertial State Estimation for Quadrotors <a href="IROS18.pdf" style="color:grey">[Download PDF]</a></h2>
           <p>
-            We wish to use the developed drag and thrust models from the drag compensation project below to estimate the 
-            orientation and velocity of a quadrotor UAV with only the IMU as sensory input. It turns out that the tilt component of attitude can be estimated, as well
+            In this project, we use the developed drag and thrust models from the drag compensation project below to estimate the 
+            orientation and velocity of a quadrotor UAV with only the IMU as sensory input. The tilt component of attitude can be estimated, as well
             as the body-frame linear velocity and the yaw can be dead-reckoned, although it will drift. The tilt and velocity are all that are needed
-            to stabilize the quadrotor, and may be estimated if the yaw is unknown. In addition, our method makes it possible to estimate the thrust coefficient
+            to stabilize the quadrotor, and may be estimated if the yaw is known. In addition, our method makes it possible to estimate the thrust coefficient
             and first-order drag coefficients of the quadrotor's dynamic model. The video below shows the system in action. 
           </p>
           <div class="vid">
@@ -67,10 +67,10 @@
             </video>
           <h2>Modeling and Compensation for First-Order Drag Effects on Quadrotors <a href="ICUAS17.pdf" style="color:grey">[Download PDF]</a></h2> 
           <p>
-            This project was an attempt to 1) develop a simple lumped-parameter dynamic model for drag effects in the horizontal and vertical directions and 
+            The contributions of this project were to 1) develop a simple lumped-parameter dynamic model for drag effects in the horizontal and vertical directions and 
             2) develop a controller to compensate for these effects. The video below shows the controller in action for the case of forward flight at a speed of 
-            around 5 m/s indoors. The lagging quadrotor doesn't compensate for drag in the controller and the leading one does. Even at these moderate speeds, a 
-            significant difference is seen in the position error. 
+            around 5 m/s indoors. The lagging quadrotor doesn't compensate for drag in the control loop and the leading one does. Even at these moderate speeds, a 
+            significant difference is seen in the position error. At high speeds (near 20 m/s), the position error can be around one meter without drag compensation. 
           </p>
           <div class="vid">
             <video controls="controls" src="ICUAS17.mp4">
