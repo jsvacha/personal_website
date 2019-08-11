@@ -1,26 +1,43 @@
 <?php
 
-  ini_set("log_errors", 1);
-  ini_set("error_log", "/tmp/php-error.log");
-  error_log( "Hello, errors!" );
+if($_POST) {
+  $name = "";
+  $email = "";
+  $subject = "";
+  $message = "";
 
-  $name = $_POST['name'];
-  $email = $_POST['email'];
-  $subject = $_POST['subject'];
-  $message = $_POST['message'];
-  $emailTo = "jsvacha@seas.upenn.edu";
-  $body = "From: $name\n Message:\n $message";
-  $headers = "From: $email";
-
-  if ($_POST['submit']) {
-    if (mail($emailTo, $subject, $body, $headers)) {
-      $message = "The email was sent successfully";
-      echo "<script type='text/javascript'>alert('$message');</script>";
-    } else {
-      $message = "The email could not be sent.";
-      echo "<script type='text/javascript'>alert('$message');</script>";
-    }
+  if(isset($_POST['name'])) {
+    $name = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
   }
+
+  if(isset($_POST['email'])) {
+    $email = str_replace(array("\r", "\n", "%0a", "%0d"), '', $_POST['email']);
+    $email = filter_var($email, FILTER_VALIDATE_EMAIL);
+  }
+
+  if(isset($_POST['subject'])) {
+    $name = filter_var($_POST['subject'], FILTER_SANITIZE_STRING);
+  }
+
+  if(isset($_POST['message'])) {
+    $name = filter_var($_POST['message'], FILTER_SANITIZE_STRING);
+  }
+
+  $recipient = "jsvacha@seas.upenn.edu";
+
+  $headers = 'MIME-Version: 1.0' . "\r\n"
+    .'Content-type: text/html; charset=utf-8' . "\r\n"
+    .'From: ' . $email . "\r\n";
+
+  if(mail($recipient, $subject, $message, $headers)) {
+    echo '<p>Thank you. Your email has been submitted.</p>';
+  } else {
+    echo '<p>Sorry, but there was an error. Please send an email to jsvacha@seas.upenn.edu to contact me. </p>';
+  }
+
+} else {
+    echo '<p>Sorry, but there was an error. Please send an email to jsvacha@seas.upenn.edu to contact me. </p>';
+}
 
 ?>
 
