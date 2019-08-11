@@ -17,6 +17,14 @@ p {
   font-size: 16px;
 }
 
+.vid {
+  width: 100%;
+}
+
+video {
+  width: 100%;
+}
+
 .prev {
   float: left;
 }
@@ -253,4 +261,5 @@ textarea, #email, #subject, input[type=submit] {
   #top-box {
     height: 120px;
   }
+
 }
