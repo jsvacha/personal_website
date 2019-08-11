@@ -41,30 +41,6 @@
           <p>The following is a list of major projects, with downloads for the corresponding papers, that I have worked on over the course of my graduate studies at Penn.</p>
         </div>
         <div id="project-name">
-          <h2>Modeling and Compensation for First-Order Drag Effects on Quadrotors <a href="ICUAS17.pdf" style="color:grey">[Download PDF]</a></h2> 
-          <p>
-            This project was an attempt to 1) develop a simple lumped-parameter dynamic model for drag effects in the horizontal and vertical directions and 
-            2) develop a controller to compensate for these effects. The video below shows the controller in action for the case of forward flight at a speed of 
-            around 5 m/s indoors. The lagging quadrotor doesn't compensate for drag in the controller and the leading one does. Even at these moderate speeds, a 
-            significant difference is seen in the position error. 
-          </p>
-          <div class="vid">
-            <video controls="controls" src="ICUAS17.mp4">
-              Your browser does not support the HTML5 Video element.
-            </video>
-          </div>
-          <h2>Inertial State Estimation for Quadrotors <a href="IROS18.pdf" style="color:grey">[Download PDF]</a></h2>
-          <p>
-            This project was an extension of the previous one. Now that such a model has been developed, we wished to use this model to estimate the 
-            orientation and velocity of a quadrotor UAV using only the IMU. It turns out that the tilt component of attitude can be estimated, as well
-            as the body-frame linear velocity and the yaw can be dead-reckoned, although it will drift. The tilt and the velocity are all that is needed
-            to stabilize the quadrotor, and may be estimated if the yaw is unknown. In addition, our method makes it possible to estimate the thrust coefficient
-            and first-order drag coefficients of the quadrotor's dynamic model. The video below shows the system in action. 
-          </p>
-          <div class="vid">
-            <video controls="controls" src="IROS18.mp4">
-              Your browser does not support the HTML5 Video element.
-            </video>
           </div>
           <h2>Vision-Aided Inertial State Estimation For Quadrotors <a href="RAL19.pdf" style="color:grey">[Download PDF]</a></h2>
           <p>
@@ -77,13 +53,38 @@
               Your browser does not support the HTML5 Video element.
             </video>
           </div>
+          <h2>Inertial State Estimation for Quadrotors <a href="IROS18.pdf" style="color:grey">[Download PDF]</a></h2>
+          <p>
+            We wish to use the developed drag and thrust models from the drag compensation project below to estimate the 
+            orientation and velocity of a quadrotor UAV with only the IMU as sensory input. It turns out that the tilt component of attitude can be estimated, as well
+            as the body-frame linear velocity and the yaw can be dead-reckoned, although it will drift. The tilt and velocity are all that are needed
+            to stabilize the quadrotor, and may be estimated if the yaw is unknown. In addition, our method makes it possible to estimate the thrust coefficient
+            and first-order drag coefficients of the quadrotor's dynamic model. The video below shows the system in action. 
+          </p>
+          <div class="vid">
+            <video controls="controls" src="IROS18.mp4">
+              Your browser does not support the HTML5 Video element.
+            </video>
+          <h2>Modeling and Compensation for First-Order Drag Effects on Quadrotors <a href="ICUAS17.pdf" style="color:grey">[Download PDF]</a></h2> 
+          <p>
+            This project was an attempt to 1) develop a simple lumped-parameter dynamic model for drag effects in the horizontal and vertical directions and 
+            2) develop a controller to compensate for these effects. The video below shows the controller in action for the case of forward flight at a speed of 
+            around 5 m/s indoors. The lagging quadrotor doesn't compensate for drag in the controller and the leading one does. Even at these moderate speeds, a 
+            significant difference is seen in the position error. 
+          </p>
+          <div class="vid">
+            <video controls="controls" src="ICUAS17.mp4">
+              Your browser does not support the HTML5 Video element.
+            </video>
+          </div>
           <h2>Newtonian-Eulerian State Estimation For Quadrotors</h2>
           <p>
-              The full system dynamics can be used to estimate additional parameters. This work is in progress and nearing completion. 
+              The full system dynamics can be used to estimate additional parameters such as moment of inertia and the offset of the IMU from center of mass. 
+              This work is in progress and nearing completion. 
           </p>
           <h2>Wind Estimation For Quadrotors</h2>
           <p>
-              By fusing vision with the filtering framework described above, the quadrotor can be used as an anemometer. This work is in progress. 
+              By fusing vision with the filtering frameworks described below, the quadrotor can be used as an anemometer. This work is in progress. 
           </p>
         </div>
       </div>
